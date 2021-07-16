@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import TodoFooter from './TodoFooter';
+import TodoFooter from '../TodoFooter';
 
 /**
  * TodoFooter 컴포넌트는 내부에서 <Link /> 컴포넌트를 사용하기 때문에

@@ -43,7 +43,7 @@ CRA 사용 시 아래 테스팅 라이브러리가 default로 설치된다.
 - 위에서 찾은 요소를 대상에 인터렉션을 발생시킨다.
 - 기대하는 결과를 선언(assert)한다.
 
-```react
+```jsx
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
@@ -60,7 +60,6 @@ test('renders learn react link', () => {
   // 기대하는 결과를 선언한다.
   expect(linkElement).toBeInTheDocument();
 });
-
 ```
 
 &nbsp;
@@ -100,7 +99,7 @@ test('renders learn react link', () => {
 
 예를 들어, axios를 사용해 HTTP 요청을 생성하는 컴포넌트를 테스트 하기 위해서는 axios를 mock(모방)한 테스트용 axios를 만든다. 아래 예제를 살펴보자.
 
-```react
+```jsx
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -120,7 +119,7 @@ function FollowersList() {
 
   // Follower 목록을 render
   return (
-  	<ul>
+    <ul>
     	{followers.map(follower => (<li>{...}</li>))}
     </ul>
   );
